@@ -23,7 +23,8 @@ This _Cloud Function_ is triggered on **http** event, which retrieve 3 files fro
    
 ## Prerequisite
 
-Upload the files from input file directory to GCP storage
+1. Create GCP storage bucket and update '.github\fm-env-variable.yaml' file with created storage bucket name
+2. Upload the files from input file directory to GCP storage
 
 ## Environment Variables
 
