@@ -17,7 +17,7 @@ def file_mapping_operation(request):
         filewriter.writerow(fmconstants.OUTPUT_FILE_HEADER)
         fileheader = []
         for file in fmconstants.FILE_DETAILS:
-            with open(file, newline='', encoding=fmconstants.ENCODING_LATIN_1) as csvfile:
+            with open(f'{fmconstants.TEMP_DIR}{file}', newline='', encoding=fmconstants.ENCODING_LATIN_1) as csvfile:
                 data = csv.reader(csvfile, quotechar='|')
                 fileheader = next(data)
 
