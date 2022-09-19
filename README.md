@@ -44,6 +44,5 @@ gcloud functions deploy file-mapping-cf --project=<project_id> --region=europe-w
 Cloud functions must be enabled in the GCP project.
 
 ## Future scope
-
 1. Accept file details (file Name, header, file location etc) from http request.
 2. Read file column header mapping from database or http request
